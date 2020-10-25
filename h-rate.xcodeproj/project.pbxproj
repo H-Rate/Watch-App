@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7187B922544DE8F00E29DAF /* HeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7187B912544DE8F00E29DAF /* HeartRate.swift */; };
+		F7187B9C2544DFC600E29DAF /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7187B9B2544DFC600E29DAF /* HealthKit.framework */; };
 		F7AB50C82544D5650038B384 /* h-rate WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F7AB50C72544D5650038B384 /* h-rate WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F7AB50CD2544D5680038B384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7AB50CC2544D5680038B384 /* Assets.xcassets */; };
 		F7AB50D42544D5690038B384 /* h-rate WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F7AB50D32544D5690038B384 /* h-rate WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -62,6 +64,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F7187B912544DE8F00E29DAF /* HeartRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRate.swift; sourceTree = "<group>"; };
+		F7187B992544DFC600E29DAF /* h-rate WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "h-rate WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		F7187B9B2544DFC600E29DAF /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		F7AB50C32544D5650038B384 /* h-rate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "h-rate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7AB50C72544D5650038B384 /* h-rate WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "h-rate WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7AB50CC2544D5680038B384 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,18 +88,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7187B9C2544DFC600E29DAF /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7187B902544DD3B00E29DAF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7187B912544DE8F00E29DAF /* HeartRate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7187B9A2544DFC600E29DAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7187B9B2544DFC600E29DAF /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F7AB50BC2544D5640038B384 = {
 			isa = PBXGroup;
 			children = (
+				F7187B902544DD3B00E29DAF /* Controller */,
 				F7AB50CB2544D5650038B384 /* h-rate WatchKit App */,
 				F7AB50D72544D5690038B384 /* h-rate WatchKit Extension */,
 				F7AB50C42544D5650038B384 /* Products */,
+				F7187B9A2544DFC600E29DAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +144,7 @@
 		F7AB50D72544D5690038B384 /* h-rate WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F7187B992544DFC600E29DAF /* h-rate WatchKit Extension.entitlements */,
 				F7AB50D82544D5690038B384 /* h_rateApp.swift */,
 				F7AB50DA2544D5690038B384 /* ContentView.swift */,
 				F7AB50DC2544D5690038B384 /* NotificationController.swift */,
@@ -271,6 +296,7 @@
 				F7AB50DB2544D5690038B384 /* ContentView.swift in Sources */,
 				F7AB50E12544D5690038B384 /* ComplicationController.swift in Sources */,
 				F7AB50D92544D5690038B384 /* h_rateApp.swift in Sources */,
+				F7187B922544DE8F00E29DAF /* HeartRate.swift in Sources */,
 				F7AB50DF2544D5690038B384 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "h-rate WatchKit Extension/h-rate WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"h-rate WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = F698675JBS;
@@ -433,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "h-rate WatchKit Extension/h-rate WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"h-rate WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = F698675JBS;

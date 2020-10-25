@@ -32,7 +32,11 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
+	<key>NSHealthShareUsageDescription</key>
+	<string>HRate wants to access your heath data to create an overlay</string>
 	<key>WKWatchOnly</key>
 	<true/>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>HRate wants to access your heath data to create an overlay</string>
 </dict>
 </plist>
