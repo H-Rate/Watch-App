@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F78761CE25ACDA7400CCBDD6 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78761CD25ACD9D300CCBDD6 /* Environment.swift */; };
+		F7B1D47625A737D30051DA10 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1D47525A737D30051DA10 /* ContentViewModel.swift */; };
 		F7B7CEAA257C005900E43882 /* hrate WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F7B7CEA9257C005900E43882 /* hrate WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F7B7CEAF257C005B00E43882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B7CEAE257C005B00E43882 /* Assets.xcassets */; };
 		F7B7CEB6257C005C00E43882 /* hrate WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F7B7CEB5257C005C00E43882 /* hrate WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -15,6 +17,7 @@
 		F7B7CEBF257C005C00E43882 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7CEBE257C005C00E43882 /* ComplicationController.swift */; };
 		F7B7CEC1257C005D00E43882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B7CEC0257C005D00E43882 /* Assets.xcassets */; };
 		F7B7CEC4257C005D00E43882 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B7CEC3257C005D00E43882 /* Preview Assets.xcassets */; };
+		F7B7CEE2257C018400E43882 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = F7B7CEE1257C018400E43882 /* SocketIO */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +51,7 @@
 		};
 		F7B7CECF257C005D00E43882 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
@@ -60,6 +63,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F78761C125ACD72600CCBDD6 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		F78761C225ACD8D300CCBDD6 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		F78761CD25ACD9D300CCBDD6 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		F7B1D47525A737D30051DA10 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		F7B7CEA5257C005800E43882 /* hrate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hrate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B7CEA9257C005900E43882 /* hrate WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hrate WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B7CEAE257C005B00E43882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,15 +85,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7B7CEE2257C018400E43882 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F78761C325ACD8E600CCBDD6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F78761C125ACD72600CCBDD6 /* Development.xcconfig */,
+				F78761C225ACD8D300CCBDD6 /* Production.xcconfig */,
+				F78761CD25ACD9D300CCBDD6 /* Environment.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		F7B7CE9E257C005800E43882 = {
 			isa = PBXGroup;
 			children = (
+				F78761C325ACD8E600CCBDD6 /* Config */,
 				F7B7CEAD257C005900E43882 /* hrate WatchKit App */,
 				F7B7CEB9257C005C00E43882 /* hrate WatchKit Extension */,
 				F7B7CEA6257C005800E43882 /* Products */,
@@ -115,6 +134,7 @@
 		F7B7CEB9257C005C00E43882 /* hrate WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F7B1D47525A737D30051DA10 /* ContentViewModel.swift */,
 				F7B7CEBA257C005C00E43882 /* ContentView.swift */,
 				F7B7CEBC257C005C00E43882 /* hrateApp.swift */,
 				F7B7CEBE257C005C00E43882 /* ComplicationController.swift */,
@@ -149,6 +169,8 @@
 				F7B7CEAC257C005900E43882 /* PBXTargetDependency */,
 			);
 			name = hrate;
+			packageProductDependencies = (
+			);
 			productName = hrate;
 			productReference = F7B7CEA5257C005800E43882 /* hrate.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
@@ -183,6 +205,9 @@
 			dependencies = (
 			);
 			name = "hrate WatchKit Extension";
+			packageProductDependencies = (
+				F7B7CEE1257C018400E43882 /* SocketIO */,
+			);
 			productName = "hrate WatchKit Extension";
 			productReference = F7B7CEB5257C005C00E43882 /* hrate WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -198,6 +223,7 @@
 				TargetAttributes = {
 					F7B7CEA4257C005800E43882 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					F7B7CEA8257C005900E43882 = {
 						CreatedOnToolsVersion = 12.2;
@@ -216,6 +242,9 @@
 				Base,
 			);
 			mainGroup = F7B7CE9E257C005800E43882;
+			packageReferences = (
+				F7B7CEE0257C018400E43882 /* XCRemoteSwiftPackageReference "socket" */,
+			);
 			productRefGroup = F7B7CEA6257C005800E43882 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,9 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7B1D47625A737D30051DA10 /* ContentViewModel.swift in Sources */,
 				F7B7CEBD257C005C00E43882 /* hrateApp.swift in Sources */,
 				F7B7CEBB257C005C00E43882 /* ContentView.swift in Sources */,
 				F7B7CEBF257C005C00E43882 /* ComplicationController.swift in Sources */,
+				F78761CE25ACDA7400CCBDD6 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +314,7 @@
 /* Begin XCBuildConfiguration section */
 		F7B7CEC6257C005D00E43882 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F78761C125ACD72600CCBDD6 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -343,6 +375,7 @@
 		};
 		F7B7CEC7257C005D00E43882 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F78761C225ACD8D300CCBDD6 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -409,7 +442,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrate.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = "${APP_BUNDLE_ID}.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -433,7 +466,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrate.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = "${APP_BUNDLE_ID}.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -453,7 +486,7 @@
 				DEVELOPMENT_TEAM = F698675JBS;
 				IBSC_MODULE = hrate_WatchKit_Extension;
 				INFOPLIST_FILE = "hrate WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrate.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "${APP_BUNDLE_ID}.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -473,7 +506,7 @@
 				DEVELOPMENT_TEAM = F698675JBS;
 				IBSC_MODULE = hrate_WatchKit_Extension;
 				INFOPLIST_FILE = "hrate WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrate.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "${APP_BUNDLE_ID}.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -486,12 +519,20 @@
 		F7B7CED1257C005D00E43882 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F698675JBS;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrate;
+				PRODUCT_BUNDLE_IDENTIFIER = "${APP_BUNDLE_ID}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hrate WatchKit App/hrate-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -499,12 +540,19 @@
 		F7B7CED2257C005D00E43882 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F698675JBS;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrate;
+				PRODUCT_BUNDLE_IDENTIFIER = "${APP_BUNDLE_ID}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hrate WatchKit App/hrate-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -549,6 +597,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F7B7CEE0257C018400E43882 /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F7B7CEE1257C018400E43882 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7B7CEE0257C018400E43882 /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F7B7CE9F257C005800E43882 /* Project object */;
 }
