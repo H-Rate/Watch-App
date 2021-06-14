@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F758540E2674FCDD0071B08D /* HRateMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F758540D2674FCDD0071B08D /* HRateMessage.swift */; };
+		F766C4AD25C712A5001D1E43 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766C4AC25C712A5001D1E43 /* WorkoutManager.swift */; };
 		F78761CE25ACDA7400CCBDD6 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78761CD25ACD9D300CCBDD6 /* Environment.swift */; };
+		F787620D25ACE7BA00CCBDD6 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F787620825ACE4E200CCBDD6 /* Session.swift */; };
+		F7898F2B267161BD00FA6FE2 /* TabAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7898F2A267161BD00FA6FE2 /* TabAView.swift */; };
+		F7898F2D2671652900FA6FE2 /* TabBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7898F2C2671652900FA6FE2 /* TabBView.swift */; };
 		F7B1D47625A737D30051DA10 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1D47525A737D30051DA10 /* ContentViewModel.swift */; };
-		F7B7CEAA257C005900E43882 /* hrate WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F7B7CEA9257C005900E43882 /* hrate WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F7B7CEAA257C005900E43882 /* HRate WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F7B7CEA9257C005900E43882 /* HRate WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F7B7CEAF257C005B00E43882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B7CEAE257C005B00E43882 /* Assets.xcassets */; };
-		F7B7CEB6257C005C00E43882 /* hrate WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F7B7CEB5257C005C00E43882 /* hrate WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F7B7CEB6257C005C00E43882 /* HRate WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F7B7CEB5257C005C00E43882 /* HRate WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F7B7CEBB257C005C00E43882 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7CEBA257C005C00E43882 /* ContentView.swift */; };
-		F7B7CEBD257C005C00E43882 /* hrateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7CEBC257C005C00E43882 /* hrateApp.swift */; };
+		F7B7CEBD257C005C00E43882 /* HRateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7CEBC257C005C00E43882 /* HRateApp.swift */; };
 		F7B7CEBF257C005C00E43882 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7CEBE257C005C00E43882 /* ComplicationController.swift */; };
 		F7B7CEC1257C005D00E43882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B7CEC0257C005D00E43882 /* Assets.xcassets */; };
 		F7B7CEC4257C005D00E43882 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B7CEC3257C005D00E43882 /* Preview Assets.xcassets */; };
 		F7B7CEE2257C018400E43882 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = F7B7CEE1257C018400E43882 /* SocketIO */; };
+		F7B9A4B525B629B80070FE67 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9A4B425B629B80070FE67 /* HealthKit.framework */; };
+		F7C972A225CDC4E7004DE62C /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C972A125CDC4E7004DE62C /* StartView.swift */; };
+		F7C972A725CDD5CA004DE62C /* RunButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C972A625CDD5CA004DE62C /* RunButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +52,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				F7B7CEB6257C005C00E43882 /* hrate WatchKit Extension.appex in Embed App Extensions */,
+				F7B7CEB6257C005C00E43882 /* HRate WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,7 +63,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				F7B7CEAA257C005900E43882 /* hrate WatchKit App.app in Embed Watch Content */,
+				F7B7CEAA257C005900E43882 /* HRate WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,21 +71,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F758540D2674FCDD0071B08D /* HRateMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRateMessage.swift; sourceTree = "<group>"; };
+		F766C4AC25C712A5001D1E43 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 		F78761C125ACD72600CCBDD6 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		F78761C225ACD8D300CCBDD6 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		F78761CD25ACD9D300CCBDD6 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		F787620825ACE4E200CCBDD6 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		F7898F2A267161BD00FA6FE2 /* TabAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAView.swift; sourceTree = "<group>"; };
+		F7898F2C2671652900FA6FE2 /* TabBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBView.swift; sourceTree = "<group>"; };
 		F7B1D47525A737D30051DA10 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		F7B7CEA5257C005800E43882 /* hrate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hrate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7B7CEA9257C005900E43882 /* hrate WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hrate WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B7CEA5257C005800E43882 /* HRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B7CEA9257C005900E43882 /* HRate WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HRate WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B7CEAE257C005B00E43882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7B7CEB0257C005B00E43882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7B7CEB5257C005C00E43882 /* hrate WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "hrate WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B7CEB5257C005C00E43882 /* HRate WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HRate WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B7CEBA257C005C00E43882 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F7B7CEBC257C005C00E43882 /* hrateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hrateApp.swift; sourceTree = "<group>"; };
+		F7B7CEBC257C005C00E43882 /* HRateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRateApp.swift; sourceTree = "<group>"; };
 		F7B7CEBE257C005C00E43882 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		F7B7CEC0257C005D00E43882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7B7CEC3257C005D00E43882 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F7B7CEC5257C005D00E43882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7B9A4B225B629B80070FE67 /* hrate WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "hrate WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		F7B9A4B425B629B80070FE67 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		F7C972A125CDC4E7004DE62C /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		F7C972A625CDD5CA004DE62C /* RunButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7B7CEE2257C018400E43882 /* SocketIO in Frameworks */,
+				F7B9A4B525B629B80070FE67 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,47 +120,64 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		F787620925ACE4E900CCBDD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F787620825ACE4E200CCBDD6 /* Session.swift */,
+				F758540D2674FCDD0071B08D /* HRateMessage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F7B7CE9E257C005800E43882 = {
 			isa = PBXGroup;
 			children = (
+				F787620925ACE4E900CCBDD6 /* Model */,
 				F78761C325ACD8E600CCBDD6 /* Config */,
-				F7B7CEAD257C005900E43882 /* hrate WatchKit App */,
-				F7B7CEB9257C005C00E43882 /* hrate WatchKit Extension */,
+				F7B7CEAD257C005900E43882 /* HRate WatchKit App */,
+				F7B7CEB9257C005C00E43882 /* HRate WatchKit Extension */,
 				F7B7CEA6257C005800E43882 /* Products */,
+				F7B9A4B325B629B80070FE67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		F7B7CEA6257C005800E43882 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F7B7CEA5257C005800E43882 /* hrate.app */,
-				F7B7CEA9257C005900E43882 /* hrate WatchKit App.app */,
-				F7B7CEB5257C005C00E43882 /* hrate WatchKit Extension.appex */,
+				F7B7CEA5257C005800E43882 /* HRate.app */,
+				F7B7CEA9257C005900E43882 /* HRate WatchKit App.app */,
+				F7B7CEB5257C005C00E43882 /* HRate WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F7B7CEAD257C005900E43882 /* hrate WatchKit App */ = {
+		F7B7CEAD257C005900E43882 /* HRate WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
 				F7B7CEAE257C005B00E43882 /* Assets.xcassets */,
 				F7B7CEB0257C005B00E43882 /* Info.plist */,
 			);
-			path = "hrate WatchKit App";
+			path = "HRate WatchKit App";
 			sourceTree = "<group>";
 		};
-		F7B7CEB9257C005C00E43882 /* hrate WatchKit Extension */ = {
+		F7B7CEB9257C005C00E43882 /* HRate WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F7B9A4B225B629B80070FE67 /* hrate WatchKit Extension.entitlements */,
 				F7B1D47525A737D30051DA10 /* ContentViewModel.swift */,
+				F766C4AC25C712A5001D1E43 /* WorkoutManager.swift */,
 				F7B7CEBA257C005C00E43882 /* ContentView.swift */,
-				F7B7CEBC257C005C00E43882 /* hrateApp.swift */,
+				F7898F2A267161BD00FA6FE2 /* TabAView.swift */,
+				F7898F2C2671652900FA6FE2 /* TabBView.swift */,
+				F7B7CEBC257C005C00E43882 /* HRateApp.swift */,
 				F7B7CEBE257C005C00E43882 /* ComplicationController.swift */,
 				F7B7CEC0257C005D00E43882 /* Assets.xcassets */,
 				F7B7CEC5257C005D00E43882 /* Info.plist */,
 				F7B7CEC2257C005D00E43882 /* Preview Content */,
+				F7C972A125CDC4E7004DE62C /* StartView.swift */,
+				F7C972A625CDD5CA004DE62C /* RunButton.swift */,
 			);
-			path = "hrate WatchKit Extension";
+			path = "HRate WatchKit Extension";
 			sourceTree = "<group>";
 		};
 		F7B7CEC2257C005D00E43882 /* Preview Content */ = {
@@ -153,12 +188,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F7B9A4B325B629B80070FE67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9A4B425B629B80070FE67 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F7B7CEA4257C005800E43882 /* hrate */ = {
+		F7B7CEA4257C005800E43882 /* HRate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7B7CED0257C005D00E43882 /* Build configuration list for PBXNativeTarget "hrate" */;
+			buildConfigurationList = F7B7CED0257C005D00E43882 /* Build configuration list for PBXNativeTarget "HRate" */;
 			buildPhases = (
 				F7B7CEA3257C005800E43882 /* Resources */,
 				F7B7CECF257C005D00E43882 /* Embed Watch Content */,
@@ -168,16 +211,16 @@
 			dependencies = (
 				F7B7CEAC257C005900E43882 /* PBXTargetDependency */,
 			);
-			name = hrate;
+			name = HRate;
 			packageProductDependencies = (
 			);
 			productName = hrate;
-			productReference = F7B7CEA5257C005800E43882 /* hrate.app */;
+			productReference = F7B7CEA5257C005800E43882 /* HRate.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		F7B7CEA8257C005900E43882 /* hrate WatchKit App */ = {
+		F7B7CEA8257C005900E43882 /* HRate WatchKit App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7B7CECC257C005D00E43882 /* Build configuration list for PBXNativeTarget "hrate WatchKit App" */;
+			buildConfigurationList = F7B7CECC257C005D00E43882 /* Build configuration list for PBXNativeTarget "HRate WatchKit App" */;
 			buildPhases = (
 				F7B7CEA7257C005900E43882 /* Resources */,
 				F7B7CECB257C005D00E43882 /* Embed App Extensions */,
@@ -187,14 +230,14 @@
 			dependencies = (
 				F7B7CEB8257C005C00E43882 /* PBXTargetDependency */,
 			);
-			name = "hrate WatchKit App";
+			name = "HRate WatchKit App";
 			productName = "hrate WatchKit App";
-			productReference = F7B7CEA9257C005900E43882 /* hrate WatchKit App.app */;
+			productReference = F7B7CEA9257C005900E43882 /* HRate WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		F7B7CEB4257C005C00E43882 /* hrate WatchKit Extension */ = {
+		F7B7CEB4257C005C00E43882 /* HRate WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7B7CEC8257C005D00E43882 /* Build configuration list for PBXNativeTarget "hrate WatchKit Extension" */;
+			buildConfigurationList = F7B7CEC8257C005D00E43882 /* Build configuration list for PBXNativeTarget "HRate WatchKit Extension" */;
 			buildPhases = (
 				F7B7CEB1257C005C00E43882 /* Sources */,
 				F7B7CEB2257C005C00E43882 /* Frameworks */,
@@ -204,12 +247,12 @@
 			);
 			dependencies = (
 			);
-			name = "hrate WatchKit Extension";
+			name = "HRate WatchKit Extension";
 			packageProductDependencies = (
 				F7B7CEE1257C018400E43882 /* SocketIO */,
 			);
 			productName = "hrate WatchKit Extension";
-			productReference = F7B7CEB5257C005C00E43882 /* hrate WatchKit Extension.appex */;
+			productReference = F7B7CEB5257C005C00E43882 /* HRate WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -233,7 +276,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F7B7CEA2257C005800E43882 /* Build configuration list for PBXProject "hrate" */;
+			buildConfigurationList = F7B7CEA2257C005800E43882 /* Build configuration list for PBXProject "HRate" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -249,9 +292,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F7B7CEA4257C005800E43882 /* hrate */,
-				F7B7CEA8257C005900E43882 /* hrate WatchKit App */,
-				F7B7CEB4257C005C00E43882 /* hrate WatchKit Extension */,
+				F7B7CEA4257C005800E43882 /* HRate */,
+				F7B7CEA8257C005900E43882 /* HRate WatchKit App */,
+				F7B7CEB4257C005C00E43882 /* HRate WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -289,8 +332,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7B1D47625A737D30051DA10 /* ContentViewModel.swift in Sources */,
-				F7B7CEBD257C005C00E43882 /* hrateApp.swift in Sources */,
+				F766C4AD25C712A5001D1E43 /* WorkoutManager.swift in Sources */,
+				F758540E2674FCDD0071B08D /* HRateMessage.swift in Sources */,
+				F7B7CEBD257C005C00E43882 /* HRateApp.swift in Sources */,
+				F7C972A225CDC4E7004DE62C /* StartView.swift in Sources */,
+				F7898F2D2671652900FA6FE2 /* TabBView.swift in Sources */,
+				F787620D25ACE7BA00CCBDD6 /* Session.swift in Sources */,
 				F7B7CEBB257C005C00E43882 /* ContentView.swift in Sources */,
+				F7898F2B267161BD00FA6FE2 /* TabAView.swift in Sources */,
+				F7C972A725CDD5CA004DE62C /* RunButton.swift in Sources */,
 				F7B7CEBF257C005C00E43882 /* ComplicationController.swift in Sources */,
 				F78761CE25ACDA7400CCBDD6 /* Environment.swift in Sources */,
 			);
@@ -301,12 +351,12 @@
 /* Begin PBXTargetDependency section */
 		F7B7CEAC257C005900E43882 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F7B7CEA8257C005900E43882 /* hrate WatchKit App */;
+			target = F7B7CEA8257C005900E43882 /* HRate WatchKit App */;
 			targetProxy = F7B7CEAB257C005900E43882 /* PBXContainerItemProxy */;
 		};
 		F7B7CEB8257C005C00E43882 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F7B7CEB4257C005C00E43882 /* hrate WatchKit Extension */;
+			target = F7B7CEB4257C005C00E43882 /* HRate WatchKit Extension */;
 			targetProxy = F7B7CEB7257C005C00E43882 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -432,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "hrate WatchKit Extension/hrate WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"hrate WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = F698675JBS;
@@ -442,7 +493,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "${APP_BUNDLE_ID}.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrate.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -456,6 +507,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "hrate WatchKit Extension/hrate WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"hrate WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = F698675JBS;
@@ -466,7 +518,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "${APP_BUNDLE_ID}.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrate.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -486,7 +538,7 @@
 				DEVELOPMENT_TEAM = F698675JBS;
 				IBSC_MODULE = hrate_WatchKit_Extension;
 				INFOPLIST_FILE = "hrate WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "${APP_BUNDLE_ID}.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrate.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -506,7 +558,7 @@
 				DEVELOPMENT_TEAM = F698675JBS;
 				IBSC_MODULE = hrate_WatchKit_Extension;
 				INFOPLIST_FILE = "hrate WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "${APP_BUNDLE_ID}.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrate.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -529,7 +581,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "${APP_BUNDLE_ID}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hrate WatchKit App/hrate-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -550,7 +602,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "${APP_BUNDLE_ID}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hrate WatchKit App/hrate-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -560,7 +612,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F7B7CEA2257C005800E43882 /* Build configuration list for PBXProject "hrate" */ = {
+		F7B7CEA2257C005800E43882 /* Build configuration list for PBXProject "HRate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7B7CEC6257C005D00E43882 /* Debug */,
@@ -569,7 +621,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7B7CEC8257C005D00E43882 /* Build configuration list for PBXNativeTarget "hrate WatchKit Extension" */ = {
+		F7B7CEC8257C005D00E43882 /* Build configuration list for PBXNativeTarget "HRate WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7B7CEC9257C005D00E43882 /* Debug */,
@@ -578,7 +630,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7B7CECC257C005D00E43882 /* Build configuration list for PBXNativeTarget "hrate WatchKit App" */ = {
+		F7B7CECC257C005D00E43882 /* Build configuration list for PBXNativeTarget "HRate WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7B7CECD257C005D00E43882 /* Debug */,
@@ -587,7 +639,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7B7CED0257C005D00E43882 /* Build configuration list for PBXNativeTarget "hrate" */ = {
+		F7B7CED0257C005D00E43882 /* Build configuration list for PBXNativeTarget "HRate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7B7CED1257C005D00E43882 /* Debug */,

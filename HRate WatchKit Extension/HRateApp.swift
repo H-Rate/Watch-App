@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct hrateApp: App {
+struct HRateApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
