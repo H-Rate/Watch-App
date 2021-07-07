@@ -17,18 +17,6 @@ struct TabAView: View {
     
     var body: some View {
         VStack {
-            
-            Spacer()
-            
-            Text("Device Token").font(.system(size: 13));
-            
-            Text(viewModel.deviceToken ?? "Loading")
-                .font(.system(size: 20))
-                .fontWeight(.semibold)
-                .kerning(2);
-            
-            Spacer()
-            
             Button(action: stopStreaming) {
                 Text("STOP").font(.system(size: 20, weight: .bold, design: .rounded))
             }

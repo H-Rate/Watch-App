@@ -10,11 +10,13 @@ import os
 
 struct ContentView: View {
     
+    @ObservedObject var watchService = WatchService()
     @ObservedObject var viewModel: ContentViewModel
     @ObservedObject var workoutManager = WorkoutManager()
     
     func viewLoaded() {
-        os_log("set func")
+        watchService.ipDidUpdate = { urlString in viewModel.openConnection(withURL: urlString) }
+        watchService.didServerStop = { viewModel.disconnect() }
         workoutManager.heartRateCallback = viewModel.emitSocketMessage
     }
     
@@ -25,6 +27,7 @@ struct ContentView: View {
         }
         .navigationTitle("HRate")
         .overlay(StartView())
+        .overlay(ConnectionStatusView(watchService: watchService, contentViewModel: viewModel))
         .environmentObject(workoutManager)
         .onAppear(perform: viewLoaded)
     }

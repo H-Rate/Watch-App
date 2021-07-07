@@ -13,8 +13,16 @@
 		F787620D25ACE7BA00CCBDD6 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F787620825ACE4E200CCBDD6 /* Session.swift */; };
 		F7898F2B267161BD00FA6FE2 /* TabAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7898F2A267161BD00FA6FE2 /* TabAView.swift */; };
 		F7898F2D2671652900FA6FE2 /* TabBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7898F2C2671652900FA6FE2 /* TabBView.swift */; };
+		F797A70C2678A048004FE57E /* hrateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797A70B2678A048004FE57E /* hrateApp.swift */; };
+		F797A70E2678A048004FE57E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797A70D2678A048004FE57E /* ContentView.swift */; };
+		F797A7102678A049004FE57E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F797A70F2678A049004FE57E /* Assets.xcassets */; };
+		F797A7132678A049004FE57E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F797A7122678A049004FE57E /* Preview Assets.xcassets */; };
+		F797A71E2678A049004FE57E /* hrateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797A71D2678A049004FE57E /* hrateTests.swift */; };
+		F797A7292678A049004FE57E /* hrateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797A7282678A049004FE57E /* hrateUITests.swift */; };
+		F797A7652678FC3F004FE57E /* BonjourService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797A7642678FC3F004FE57E /* BonjourService.swift */; };
+		F797A768267A2457004FE57E /* WatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797A767267A2457004FE57E /* WatchService.swift */; };
+		F7B059AA2680D3DC00438A42 /* ConnectionStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B059A92680D3DC00438A42 /* ConnectionStatusView.swift */; };
 		F7B1D47625A737D30051DA10 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1D47525A737D30051DA10 /* ContentViewModel.swift */; };
-		F7B7CEAA257C005900E43882 /* HRate WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F7B7CEA9257C005900E43882 /* HRate WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F7B7CEAF257C005B00E43882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B7CEAE257C005B00E43882 /* Assets.xcassets */; };
 		F7B7CEB6257C005C00E43882 /* HRate WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F7B7CEB5257C005C00E43882 /* HRate WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F7B7CEBB257C005C00E43882 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7CEBA257C005C00E43882 /* ContentView.swift */; };
@@ -24,17 +32,26 @@
 		F7B7CEC4257C005D00E43882 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B7CEC3257C005D00E43882 /* Preview Assets.xcassets */; };
 		F7B7CEE2257C018400E43882 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = F7B7CEE1257C018400E43882 /* SocketIO */; };
 		F7B9A4B525B629B80070FE67 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9A4B425B629B80070FE67 /* HealthKit.framework */; };
+		F7C91CBD267A3AC800BAF039 /* HRate WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F7B7CEA9257C005900E43882 /* HRate WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F7C941CE267A2C81000C42AF /* WatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C941CD267A2C81000C42AF /* WatchService.swift */; };
 		F7C972A225CDC4E7004DE62C /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C972A125CDC4E7004DE62C /* StartView.swift */; };
 		F7C972A725CDD5CA004DE62C /* RunButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C972A625CDD5CA004DE62C /* RunButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F7B7CEAB257C005900E43882 /* PBXContainerItemProxy */ = {
+		F797A71A2678A049004FE57E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F7B7CE9F257C005800E43882 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F7B7CEA8257C005900E43882;
-			remoteInfo = "hrate WatchKit App";
+			remoteGlobalIDString = F797A7082678A048004FE57E;
+			remoteInfo = hrate;
+		};
+		F797A7252678A049004FE57E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7B7CE9F257C005800E43882 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F797A7082678A048004FE57E;
+			remoteInfo = hrate;
 		};
 		F7B7CEB7257C005C00E43882 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -42,6 +59,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = F7B7CEB4257C005C00E43882;
 			remoteInfo = "hrate WatchKit Extension";
+		};
+		F7C91CBE267A3AC800BAF039 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7B7CE9F257C005800E43882 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7B7CEA8257C005900E43882;
+			remoteInfo = "HRate WatchKit App";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -57,13 +81,13 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7B7CECF257C005D00E43882 /* Embed Watch Content */ = {
+		F7C91CC0267A3AC800BAF039 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				F7B7CEAA257C005900E43882 /* HRate WatchKit App.app in Embed Watch Content */,
+				F7C91CBD267A3AC800BAF039 /* HRate WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,8 +103,22 @@
 		F787620825ACE4E200CCBDD6 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		F7898F2A267161BD00FA6FE2 /* TabAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAView.swift; sourceTree = "<group>"; };
 		F7898F2C2671652900FA6FE2 /* TabBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBView.swift; sourceTree = "<group>"; };
+		F797A7092678A048004FE57E /* hrate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hrate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F797A70B2678A048004FE57E /* hrateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hrateApp.swift; sourceTree = "<group>"; };
+		F797A70D2678A048004FE57E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F797A70F2678A049004FE57E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F797A7122678A049004FE57E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F797A7142678A049004FE57E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F797A7192678A049004FE57E /* hrateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hrateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F797A71D2678A049004FE57E /* hrateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hrateTests.swift; sourceTree = "<group>"; };
+		F797A71F2678A049004FE57E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F797A7242678A049004FE57E /* hrateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hrateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F797A7282678A049004FE57E /* hrateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hrateUITests.swift; sourceTree = "<group>"; };
+		F797A72A2678A049004FE57E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F797A7642678FC3F004FE57E /* BonjourService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourService.swift; sourceTree = "<group>"; };
+		F797A767267A2457004FE57E /* WatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchService.swift; sourceTree = "<group>"; };
+		F7B059A92680D3DC00438A42 /* ConnectionStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionStatusView.swift; sourceTree = "<group>"; };
 		F7B1D47525A737D30051DA10 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		F7B7CEA5257C005800E43882 /* HRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B7CEA9257C005900E43882 /* HRate WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HRate WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B7CEAE257C005B00E43882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7B7CEB0257C005B00E43882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,11 +131,33 @@
 		F7B7CEC5257C005D00E43882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7B9A4B225B629B80070FE67 /* hrate WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "hrate WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		F7B9A4B425B629B80070FE67 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		F7C941CD267A2C81000C42AF /* WatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchService.swift; sourceTree = "<group>"; };
 		F7C972A125CDC4E7004DE62C /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		F7C972A625CDD5CA004DE62C /* RunButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F797A7062678A048004FE57E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F797A7162678A049004FE57E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F797A7212678A049004FE57E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7B7CEB2257C005C00E43882 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,13 +189,64 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F797A70A2678A048004FE57E /* hrate */ = {
+			isa = PBXGroup;
+			children = (
+				F797A766267A2016004FE57E /* Components */,
+				F797A70B2678A048004FE57E /* hrateApp.swift */,
+				F797A70D2678A048004FE57E /* ContentView.swift */,
+				F797A70F2678A049004FE57E /* Assets.xcassets */,
+				F797A7142678A049004FE57E /* Info.plist */,
+				F797A7112678A049004FE57E /* Preview Content */,
+				F797A7642678FC3F004FE57E /* BonjourService.swift */,
+				F797A767267A2457004FE57E /* WatchService.swift */,
+			);
+			path = hrate;
+			sourceTree = "<group>";
+		};
+		F797A7112678A049004FE57E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F797A7122678A049004FE57E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F797A71C2678A049004FE57E /* hrateTests */ = {
+			isa = PBXGroup;
+			children = (
+				F797A71D2678A049004FE57E /* hrateTests.swift */,
+				F797A71F2678A049004FE57E /* Info.plist */,
+			);
+			path = hrateTests;
+			sourceTree = "<group>";
+		};
+		F797A7272678A049004FE57E /* hrateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F797A7282678A049004FE57E /* hrateUITests.swift */,
+				F797A72A2678A049004FE57E /* Info.plist */,
+			);
+			path = hrateUITests;
+			sourceTree = "<group>";
+		};
+		F797A766267A2016004FE57E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		F7B7CE9E257C005800E43882 = {
 			isa = PBXGroup;
 			children = (
 				F787620925ACE4E900CCBDD6 /* Model */,
 				F78761C325ACD8E600CCBDD6 /* Config */,
+				F797A70A2678A048004FE57E /* hrate */,
 				F7B7CEAD257C005900E43882 /* HRate WatchKit App */,
 				F7B7CEB9257C005C00E43882 /* HRate WatchKit Extension */,
+				F797A71C2678A049004FE57E /* hrateTests */,
+				F797A7272678A049004FE57E /* hrateUITests */,
 				F7B7CEA6257C005800E43882 /* Products */,
 				F7B9A4B325B629B80070FE67 /* Frameworks */,
 			);
@@ -144,9 +255,11 @@
 		F7B7CEA6257C005800E43882 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F7B7CEA5257C005800E43882 /* HRate.app */,
 				F7B7CEA9257C005900E43882 /* HRate WatchKit App.app */,
 				F7B7CEB5257C005C00E43882 /* HRate WatchKit Extension.appex */,
+				F797A7092678A048004FE57E /* hrate.app */,
+				F797A7192678A049004FE57E /* hrateTests.xctest */,
+				F797A7242678A049004FE57E /* hrateUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +289,8 @@
 				F7B7CEC2257C005D00E43882 /* Preview Content */,
 				F7C972A125CDC4E7004DE62C /* StartView.swift */,
 				F7C972A625CDD5CA004DE62C /* RunButton.swift */,
+				F7C941CD267A2C81000C42AF /* WatchService.swift */,
+				F7B059A92680D3DC00438A42 /* ConnectionStatusView.swift */,
 			);
 			path = "HRate WatchKit Extension";
 			sourceTree = "<group>";
@@ -199,24 +314,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F7B7CEA4257C005800E43882 /* HRate */ = {
+		F797A7082678A048004FE57E /* hrate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7B7CED0257C005D00E43882 /* Build configuration list for PBXNativeTarget "HRate" */;
+			buildConfigurationList = F797A72B2678A049004FE57E /* Build configuration list for PBXNativeTarget "hrate" */;
 			buildPhases = (
-				F7B7CEA3257C005800E43882 /* Resources */,
-				F7B7CECF257C005D00E43882 /* Embed Watch Content */,
+				F797A7052678A048004FE57E /* Sources */,
+				F797A7062678A048004FE57E /* Frameworks */,
+				F797A7072678A048004FE57E /* Resources */,
+				F7C91CC0267A3AC800BAF039 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F7B7CEAC257C005900E43882 /* PBXTargetDependency */,
+				F7C91CBF267A3AC800BAF039 /* PBXTargetDependency */,
 			);
-			name = HRate;
-			packageProductDependencies = (
-			);
+			name = hrate;
 			productName = hrate;
-			productReference = F7B7CEA5257C005800E43882 /* HRate.app */;
-			productType = "com.apple.product-type.application.watchapp2-container";
+			productReference = F797A7092678A048004FE57E /* hrate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F797A7182678A049004FE57E /* hrateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F797A72E2678A049004FE57E /* Build configuration list for PBXNativeTarget "hrateTests" */;
+			buildPhases = (
+				F797A7152678A049004FE57E /* Sources */,
+				F797A7162678A049004FE57E /* Frameworks */,
+				F797A7172678A049004FE57E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F797A71B2678A049004FE57E /* PBXTargetDependency */,
+			);
+			name = hrateTests;
+			productName = hrateTests;
+			productReference = F797A7192678A049004FE57E /* hrateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F797A7232678A049004FE57E /* hrateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F797A7312678A049004FE57E /* Build configuration list for PBXNativeTarget "hrateUITests" */;
+			buildPhases = (
+				F797A7202678A049004FE57E /* Sources */,
+				F797A7212678A049004FE57E /* Frameworks */,
+				F797A7222678A049004FE57E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F797A7262678A049004FE57E /* PBXTargetDependency */,
+			);
+			name = hrateUITests;
+			productName = hrateUITests;
+			productReference = F797A7242678A049004FE57E /* hrateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		F7B7CEA8257C005900E43882 /* HRate WatchKit App */ = {
 			isa = PBXNativeTarget;
@@ -261,12 +412,19 @@
 		F7B7CE9F257C005800E43882 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
-					F7B7CEA4257C005800E43882 = {
-						CreatedOnToolsVersion = 12.2;
-						LastSwiftMigration = 1220;
+					F797A7082678A048004FE57E = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					F797A7182678A049004FE57E = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F797A7082678A048004FE57E;
+					};
+					F797A7232678A049004FE57E = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F797A7082678A048004FE57E;
 					};
 					F7B7CEA8257C005900E43882 = {
 						CreatedOnToolsVersion = 12.2;
@@ -292,15 +450,33 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F7B7CEA4257C005800E43882 /* HRate */,
+				F797A7082678A048004FE57E /* hrate */,
 				F7B7CEA8257C005900E43882 /* HRate WatchKit App */,
 				F7B7CEB4257C005C00E43882 /* HRate WatchKit Extension */,
+				F797A7182678A049004FE57E /* hrateTests */,
+				F797A7232678A049004FE57E /* hrateUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F7B7CEA3257C005800E43882 /* Resources */ = {
+		F797A7072678A048004FE57E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F797A7132678A049004FE57E /* Preview Assets.xcassets in Resources */,
+				F797A7102678A049004FE57E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F797A7172678A049004FE57E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F797A7222678A049004FE57E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,6 +503,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F797A7052678A048004FE57E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F797A70E2678A048004FE57E /* ContentView.swift in Sources */,
+				F797A768267A2457004FE57E /* WatchService.swift in Sources */,
+				F797A7652678FC3F004FE57E /* BonjourService.swift in Sources */,
+				F797A70C2678A048004FE57E /* hrateApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F797A7152678A049004FE57E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F797A71E2678A049004FE57E /* hrateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F797A7202678A049004FE57E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F797A7292678A049004FE57E /* hrateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7B7CEB1257C005C00E43882 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,9 +538,11 @@
 				F766C4AD25C712A5001D1E43 /* WorkoutManager.swift in Sources */,
 				F758540E2674FCDD0071B08D /* HRateMessage.swift in Sources */,
 				F7B7CEBD257C005C00E43882 /* HRateApp.swift in Sources */,
+				F7C941CE267A2C81000C42AF /* WatchService.swift in Sources */,
 				F7C972A225CDC4E7004DE62C /* StartView.swift in Sources */,
 				F7898F2D2671652900FA6FE2 /* TabBView.swift in Sources */,
 				F787620D25ACE7BA00CCBDD6 /* Session.swift in Sources */,
+				F7B059AA2680D3DC00438A42 /* ConnectionStatusView.swift in Sources */,
 				F7B7CEBB257C005C00E43882 /* ContentView.swift in Sources */,
 				F7898F2B267161BD00FA6FE2 /* TabAView.swift in Sources */,
 				F7C972A725CDD5CA004DE62C /* RunButton.swift in Sources */,
@@ -349,19 +554,159 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F7B7CEAC257C005900E43882 /* PBXTargetDependency */ = {
+		F797A71B2678A049004FE57E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F7B7CEA8257C005900E43882 /* HRate WatchKit App */;
-			targetProxy = F7B7CEAB257C005900E43882 /* PBXContainerItemProxy */;
+			target = F797A7082678A048004FE57E /* hrate */;
+			targetProxy = F797A71A2678A049004FE57E /* PBXContainerItemProxy */;
+		};
+		F797A7262678A049004FE57E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F797A7082678A048004FE57E /* hrate */;
+			targetProxy = F797A7252678A049004FE57E /* PBXContainerItemProxy */;
 		};
 		F7B7CEB8257C005C00E43882 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F7B7CEB4257C005C00E43882 /* HRate WatchKit Extension */;
 			targetProxy = F7B7CEB7257C005C00E43882 /* PBXContainerItemProxy */;
 		};
+		F7C91CBF267A3AC800BAF039 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7B7CEA8257C005900E43882 /* HRate WatchKit App */;
+			targetProxy = F7C91CBE267A3AC800BAF039 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		F797A72C2678A049004FE57E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"hrate/Preview Content\"";
+				DEVELOPMENT_TEAM = F698675JBS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = hrate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F797A72D2678A049004FE57E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"hrate/Preview Content\"";
+				DEVELOPMENT_TEAM = F698675JBS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = hrate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F797A72F2678A049004FE57E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F698675JBS;
+				INFOPLIST_FILE = hrateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hrate.app/hrate";
+			};
+			name = Debug;
+		};
+		F797A7302678A049004FE57E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F698675JBS;
+				INFOPLIST_FILE = hrateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hrate.app/hrate";
+			};
+			name = Release;
+		};
+		F797A7322678A049004FE57E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F698675JBS;
+				INFOPLIST_FILE = hrateUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = hrate;
+			};
+			name = Debug;
+		};
+		F797A7332678A049004FE57E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F698675JBS;
+				INFOPLIST_FILE = hrateUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = hrate;
+			};
+			name = Release;
+		};
 		F7B7CEC6257C005D00E43882 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F78761C125ACD72600CCBDD6 /* Development.xcconfig */;
@@ -568,50 +913,36 @@
 			};
 			name = Release;
 		};
-		F7B7CED1257C005D00E43882 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = F698675JBS;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "hrate WatchKit App/hrate-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		F7B7CED2257C005D00E43882 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = F698675JBS;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.an23lm.hrate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "hrate WatchKit App/hrate-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F797A72B2678A049004FE57E /* Build configuration list for PBXNativeTarget "hrate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F797A72C2678A049004FE57E /* Debug */,
+				F797A72D2678A049004FE57E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F797A72E2678A049004FE57E /* Build configuration list for PBXNativeTarget "hrateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F797A72F2678A049004FE57E /* Debug */,
+				F797A7302678A049004FE57E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F797A7312678A049004FE57E /* Build configuration list for PBXNativeTarget "hrateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F797A7322678A049004FE57E /* Debug */,
+				F797A7332678A049004FE57E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F7B7CEA2257C005800E43882 /* Build configuration list for PBXProject "HRate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -635,15 +966,6 @@
 			buildConfigurations = (
 				F7B7CECD257C005D00E43882 /* Debug */,
 				F7B7CECE257C005D00E43882 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F7B7CED0257C005D00E43882 /* Build configuration list for PBXNativeTarget "HRate" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F7B7CED1257C005D00E43882 /* Debug */,
-				F7B7CED2257C005D00E43882 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

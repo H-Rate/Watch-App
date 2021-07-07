@@ -26,6 +26,11 @@
 	<string>$(PRODUCT_MODULE_NAME).ComplicationController</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>socket.io</key>
+			<dict/>
+		</dict>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
@@ -51,7 +56,7 @@
 	<array>
 		<string>workout-processing</string>
 	</array>
-	<key>WKWatchOnly</key>
-	<true/>
+	<key>WKRunsIndependentlyOfCompanionApp</key>
+	<false/>
 </dict>
 </plist>

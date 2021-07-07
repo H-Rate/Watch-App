@@ -11,7 +11,7 @@ struct StartView: View {
     
     @EnvironmentObject var workoutManager: WorkoutManager
     
-    let screenHeight = WKInterfaceDevice.current().screenBounds.size.height
+    private let screenHeight = WKInterfaceDevice.current().screenBounds.size.height
     
     func startAction() {
         workoutManager.startWorkout()

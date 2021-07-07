@@ -9,10 +9,9 @@ import Foundation
 import SocketIO
 
 struct HRateMessage : SocketData {
-    let id: String
     let payload: String
     
     func socketRepresentation() -> SocketData {
-        return ["id": id, "payload": payload]
+        return ["payload": payload]
     }
 }
