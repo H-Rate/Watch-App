@@ -19,7 +19,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>2</string>
+	<string>3</string>
 	<key>CLKComplicationPrincipalClass</key>
 	<string>$(PRODUCT_MODULE_NAME).ComplicationController</string>
 	<key>NSAppTransportSecurity</key>
@@ -43,7 +43,7 @@
 		<string>com.apple.watchkit</string>
 	</dict>
 	<key>NSHealthShareUsageDescription</key>
-	<string>HRate wnats to access your heart rate</string>
+	<string>HRate wants to access your heart rate</string>
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>HRate wants to access your heart rate</string>
 	<key>UIBackgroundModes</key>
