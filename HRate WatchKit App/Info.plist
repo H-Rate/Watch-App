@@ -27,11 +27,7 @@
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
 	<string>com.an23lm.hrate</string>
-	<key>NSHealthShareUsageDescription</key>
-	<string>HRate wants to access your heart rate</string>
 	<key>WKWatchKitApp</key>
 	<true/>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>HRate wants to access your heart rate</string>
 </dict>
 </plist>
